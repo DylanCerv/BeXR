@@ -1,0 +1,35 @@
+
+.auto-slide-carousel {
+    overflow: hidden;
+    width: 100vw;
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 0%, rgb(0, 0, 0) 17.5%, rgb(0, 0, 0) 82.5%, rgba(0, 0, 0, 0.25) 100%);
+	/* max-width: 1020px; */
+}
+.auto-slide-carousel-sub-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.animate-scroll {
+	animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		/* tamaño de la card, n° elementos - el margin, elementos duplicados */
+		/* transform: translateX(calc(-400px * 5 - 0.5rem * 10));  */
+		transform: translateX(var(--translate-x));
+	}
+}
+
+
+/* Responsive */
+@media screen and (min-width: 810px) {
+    .auto-slide-carousel {
+		width: calc(100vw - 12rem);
+	}
+}

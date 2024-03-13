@@ -1,0 +1,59 @@
+.carousel-container-hero {
+  position: absolute;
+  max-width: 100vw;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  /* background-color: #ffffff5d; */
+}
+
+.item-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .item-img {
+    max-width: 100%; /* Limita la anchura máxima de la imagen */
+  }
+}
+
+/* .carousel-container {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carousel-slide img {
+  height: 100vh;
+  width: auto;
+  max-width: 100%;
+  align-self: center;
+} */

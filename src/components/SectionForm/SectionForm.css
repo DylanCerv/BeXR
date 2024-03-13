@@ -1,0 +1,146 @@
+.section-form {
+    min-height: 100vh;
+    background-color: var(--blue);
+    position: relative;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* Form */
+.title-form {
+    color: #fff;
+    font-size: 38px;
+    position: relative;
+    z-index: 10;
+}
+
+.form-contact {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 100vw;
+    height: 100%;
+}
+.first-inputs {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+}
+.input {
+    width: 100%;
+    padding: 15px;
+
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    line-height: 1.4em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "montserrat Regular", "montserrat", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 16px;
+    background: rgb(226, 226, 227);
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 0 1px transparent;
+    padding: 15px;
+}
+textarea.input {
+    width: -webkit-fill-available;
+}
+.button-form {
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 1.4em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: "montserrat Regular", "montserrat", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    font-size: 16px;
+    background: rgb(214, 109, 24);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.error-void {
+    box-shadow: rgb(238, 68, 68) 0px 0px 0px 1px inset;
+}
+
+/* Responsive */
+@media screen and (min-width: 810px) {
+    .section-form {
+        padding-left: 12rem;
+        align-items: center;
+    }
+    .form-contact {
+        max-width: 550px;
+    }
+}
+
+
+/* Nebulosa */
+.blur-circle {
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(circle, #cb7025 0%, rgba(203, 112, 37, 0) 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    position: absolute;
+    z-index: 1;
+}
+.form-animation.blur-circle-1 {
+    top: 0;
+    left: 50%;
+    animation: uno 15s infinite;
+}
+.form-animation.blur-circle-2 {
+    top: 45%;
+    right: 0;
+    animation: dos 25s infinite;
+}
+.form-animation.blur-circle-3 {
+    bottom: 0;
+    left: 0;
+    animation: tres 20s infinite;
+}
+
+@keyframes uno {
+    0% {left: 100%; top: 0%; opacity: 1;}
+    20% {left: 20%; top: 20%; }
+    40% {left: 0%; top: 50%;}
+    60% {left: 25%; top: 80%;}
+    80% {left: 50%; top: 50%; opacity: 0.5;}
+    100% {left: 50%; top: 0%; opacity: 0;}
+}
+
+@keyframes dos {
+    0% {right: 100%; top: 45%; opacity: 1;}
+    20% {right: 50%; top: 20%; }
+    40% {right: 0%; top: 80%;}
+    60% {right: 75%; top: 50%;}
+    80% {right: 0%; top: 0%; opacity: 0.8;}
+    100% {right: 0%; top: 45%; opacity: 0;}
+}
+
+@keyframes tres {
+    0% {left: 0%; bottom: 100%; opacity: 1;}
+    20% {left: 25%; bottom: 80%;}
+    40% {left: 100%; bottom: 50%;}
+    60% {left: 75%; bottom: 20%; }
+    80% {left: 50%; bottom: 50%; opacity: 0.3;}
+    100% {left: 0%; bottom: 0%; opacity: 0;}
+}

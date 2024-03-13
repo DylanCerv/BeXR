@@ -1,0 +1,182 @@
+
+.section-hero {
+    background-color: var(--blue);
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Texts */
+.container-section-content {
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group-title {
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    z-index: 11;
+}
+.title {
+    font-size: 5rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #E2E2E3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.orange {
+    color: #cb7025;
+    font-size: 5.625rem;
+}
+
+
+/* Animations */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-double {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.29);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom-animation {
+    animation: zoom 12s infinite;
+}
+
+.zoom-animation-double {
+    animation: zoom-double 12s infinite;
+}
+
+
+
+/* Nebulosa */
+.blur-circle-orange {
+    width: 200px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(189, 104, 35, 0.5) 0%, rgba(203, 112, 37, 0) 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    position: absolute;
+    z-index: 1;
+}
+.blur-circle-orange.blur-circle-4 {
+    background: radial-gradient(circle, rgba(189, 104, 35, .25) 0%, rgba(203, 112, 37, 0) 100%);
+    width: 400px;
+}
+.blur-circle-orange.blur-circle-1 {
+    top: 0;
+    left: 0%;
+    animation: unoHero 10s infinite;
+}
+.blur-circle-orange.blur-circle-2 {
+    top: 0;
+    left: 50%;
+    animation: dosHero 10s infinite;
+}
+.blur-circle-orange.blur-circle-3 {
+    bottom: 0;
+    left: 10%;
+    animation: tresHero 10s infinite;
+}
+.blur-circle-orange.blur-circle-4 {
+    left: 50%;
+    bottom: 0;
+    animation: cuatroHero 10s infinite;
+}
+
+@keyframes unoHero {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(50%) scale(1.2); }
+}
+
+@keyframes dosHero {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(50%) scale(1.2); }
+}
+
+@keyframes tresHero {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-50%) scale(1.2); }
+}
+
+@keyframes cuatroHero {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-50%) scale(1.2); }
+}
+
+
+
+/* Responsive */
+@media screen and (min-width: 810px) {
+    .title {
+        font-size: calc(5rem *1.4) ;
+    }
+    .orange {
+        font-size: calc(5.625rem *1.4) ;
+    }
+
+    /* Nebulosa */
+    .blur-circle-orange {
+        width: 500px;
+        height: 600px;
+    }
+    .blur-circle-orange.blur-circle-2, .blur-circle-orange.blur-circle-4 {
+        background: radial-gradient(circle, rgba(189, 104, 35, 0.514) 0%, rgba(203, 112, 37, 0) 100%);
+        width: 400px;
+    }
+    .blur-circle-1 {
+        top: 0;
+        left: 15%;
+        animation: uno-hero 10s infinite;
+    }
+    .blur-circle-2 {
+        top: 10%;
+        left: 50%;
+        animation: dos-hero 17s infinite;
+    }
+    .blur-circle-3 {
+        bottom: 0;
+        left: 10%;
+        animation: tres-hero 15s infinite;
+    }
+    .blur-circle-4 {
+        left: 50%;
+        bottom: 0;
+        animation: tres-hero 15s infinite;
+    }
+
+    
+}

@@ -1,0 +1,27 @@
+
+.card-carousel {
+    width: 400px;
+    position: relative;
+    height: fit-content;
+    margin: .5rem;
+}
+
+.image-carousel {
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.card-carousel-texts {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: #F2F2F3;
+    font-size: 30px;
+}
+
+.card-carousel-description {
+    font-size: 14px;
+    font-weight: bold;
+}
