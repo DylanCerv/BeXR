@@ -80,6 +80,12 @@ export default function SectionForm() {
             />
             <input type="submit" value="Enviar" className='button-form' />
         </form>
+
+        <img
+          className='image-franja-from'
+          src="/sections/Franjas secciones.png"
+          alt=""
+        />
     </section>
   )
 }

@@ -80,6 +80,26 @@
     animation: zoom-double 12s infinite;
 }
 
+@keyframes franja-home {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.image-franja-home {
+    position: absolute;
+    right: -30px;
+    bottom: -100px;
+    animation: franja-home 30s infinite;
+}
+
+
+
 
 
 /* Nebulosa */
@@ -117,9 +137,34 @@
     animation: cuatroHero 10s infinite;
 }
 
+.blur-circle-grey {
+    width: 200px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(90, 99, 106, 0.2) 0%, rgba(63, 77, 84, 0) 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    position: absolute;
+    z-index: 1;
+}
+.blur-circle-orange.blur-circle-5 {
+    left: 0;
+    bottom: 0;
+    animation: cuatroHero 15s infinite;
+}
+.blur-circle-orange.blur-circle-6 {
+    right: 0;
+    bottom: 0;
+    animation: cuatroHero 20s infinite;
+}
+.blur-circle-orange.blur-circle-7 {
+    /* left: 50%; */
+    bottom: 0;
+    animation: cuatroHero 25s infinite;
+}
+
 @keyframes unoHero {
     0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(50%) scale(1.2); }
+    50% { transform: translateY(50%)  translateX(0) scale(2); }
 }
 
 @keyframes dosHero {
@@ -129,7 +174,7 @@
 
 @keyframes tresHero {
     0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-50%) scale(1.2); }
+    50% { transform: translateY(-50%) scale(1.8); }
 }
 
 @keyframes cuatroHero {

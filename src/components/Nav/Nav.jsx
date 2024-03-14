@@ -38,6 +38,7 @@ export default function Nav() {
       };
     }, []);
 
+    const sentenciaIfCurrentSectionVoid = !currentSection ? 'active-white' : '';
     const sentenciaIf = currentSection === 'White' || currentSection === 'Contacto';
 
   return (
@@ -57,7 +58,7 @@ export default function Nav() {
             </div>
         </div>
 
-        <ul className={`menu ${isOpen ? 'open' : ''} ${sentenciaIf ? 'active-white' : ''}`}>
+        <ul className={`menu ${isOpen ? 'open' : ''} ${sentenciaIfCurrentSectionVoid} ${sentenciaIf ? 'active-white' : ''}`}>
             <li><a href="#Nosotros" className={currentSection === 'Nosotros' ? 'active' : ''}>Nosotros</a></li>
             <li><a href="#Servicios" className={currentSection === 'Servicios' ? 'active' : ''}>Servicios</a></li>
             <li><a href="#Proyectos" className={currentSection === 'Proyectos' ? 'active' : ''}>Proyectos</a></li>
