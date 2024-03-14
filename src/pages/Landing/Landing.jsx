@@ -11,19 +11,19 @@ import SectionHero from '../../components/SectionHero/SectionHero'
 export default function Landing() {
 
   const BeXRTeam = [
-    {title: "Esteban Baques Devesa", description: "Co-founder", src: "/public/avatars/Avatar-Paris.jpeg"},
-    {title: "Héctor Alises Sanchez", description: "Developer", src: "/public/avatars/Avatar-Paris.jpeg"},
-    {title: "Julia Lozano", description: "UX/UI Designer", src: "/public/avatars/Avatar-Julia.jpeg"},
-    {title: "David Santín Montero", description: "Developer", src: "/public/avatars/Avatar-Paris.jpeg"},
-    {title: "Ángel David García", description: "Technical Artist", src: "/public/avatars/Avatar-Forest.jpeg"},
-    {title: "Raymundo Alvarado", description: "Curador de experiencias digitales", src: "/public/avatars/Avatar-Party.jpeg"},
+    {title: "Esteban Baques Devesa", description: "Co-founder", src: "/avatars/Avatar-Paris.jpeg"},
+    {title: "Héctor Alises Sanchez", description: "Developer", src: "/avatars/Avatar-Paris.jpeg"},
+    {title: "Julia Lozano", description: "UX/UI Designer", src: "/avatars/Avatar-Julia.jpeg"},
+    {title: "David Santín Montero", description: "Developer", src: "/avatars/Avatar-Paris.jpeg"},
+    {title: "Ángel David García", description: "Technical Artist", src: "/avatars/Avatar-Forest.jpeg"},
+    {title: "Raymundo Alvarado", description: "Curador de experiencias digitales", src: "/avatars/Avatar-Party.jpeg"},
   ]
 
   const Services = [
-    {title: "Web 3.0", src: "/public/services/Man.jpg"},
-    {title: "Desarrollo de OTT", src: "/public/services/3Person.jpg"},
-    {title: "Retail y metaverso", src: "/public/services/2Person.jpg"},
-    {title: "BeXR entretenimiento", src: "/public/services/3Person.jpg"},
+    {title: "Web 3.0", src: "/services/Man.jpg"},
+    {title: "Desarrollo de OTT", src: "/services/3Person.jpg"},
+    {title: "Retail y metaverso", src: "/services/2Person.jpg"},
+    {title: "BeXR entretenimiento", src: "/services/3Person.jpg"},
   ]
 
   return (

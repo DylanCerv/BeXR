@@ -18,10 +18,10 @@ export default function CarouselHero() {
 
 
   const images = [
-    '/public/personsHero/1.png',
-    '/public/personsHero/2.png',
-    '/public/personsHero/3.png',
-    '/public/personsHero/4.png',
+    '/personsHero/1.png',
+    '/personsHero/2.png',
+    '/personsHero/3.png',
+    '/personsHero/4.png',
   ]
 
 
@@ -39,7 +39,7 @@ export default function CarouselHero() {
         
   return (
     <div className='carousel-container-hero'>
-        <img className='item-img hidden'  src={'/public/personsHero/4.png'}  />
+        <img className='item-img hidden'  src={'/personsHero/4.png'}  />
       <Slider {...settings}>
         {images.map((image, index) => (
             <img  className='item-img' key={index} src={image} alt={`Slide ${index + 1}`} />

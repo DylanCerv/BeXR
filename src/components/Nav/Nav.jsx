@@ -46,9 +46,9 @@ export default function Nav() {
         <div className='navbar-container-head'>
             <a href="#Home">
               {sentenciaIf ? 
-                <img className='logo' src={'/logo.svg'} alt="" />
+                <img className='logo' src={'/logo/Logo_blanco.png'} alt="" />
               :
-                <img className='logo' src={'/logo-color.svg'} alt="" />
+                <img className='logo' src={'/logo/Logo_color.png'} alt="" />
               }
             </a>
             <div className={`menu-button ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
